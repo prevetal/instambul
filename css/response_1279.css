@@ -1,0 +1,1331 @@
+@media print,
+(max-width: 1279px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size_title: 52px;
+        --offset: 5px;
+        --cont_padding: 20px;
+    }
+
+
+    html.custom_scroll ::-webkit-scrollbar
+    {
+        width: 5px;
+        height: 5px;
+    }
+
+
+    .wrap,
+    .fancybox__container
+    {
+        zoom: 1;
+    }
+
+    @-moz-document url-prefix()
+    {
+        html
+        {
+            width: 100%;
+            height: 100%;
+
+            transform: none;
+        }
+    }
+
+
+    .block
+    {
+        margin-bottom: 100px;
+    }
+
+
+    .swiper-button-next,
+    .swiper-button-prev
+    {
+        width: 68px;
+        height: 68px;
+        margin-bottom: 60px;
+    }
+
+
+
+    /*--------------
+        Fancybox
+    --------------*/
+    .fancybox__slide
+    {
+        padding: var(--cont_padding);
+    }
+
+
+    .fancybox__content > .f-button.is-close-btn,
+    .is-compact .fancybox__content > .f-button.is-close-btn
+    {
+        --f-button-width: 52px;
+        --f-button-height: 52px;
+        --f-button-svg-width: 20px;
+        --f-button-svg-height: 20px;
+    }
+
+
+
+    /*---------------
+        Accordion
+    ---------------*/
+    .accordion_item .head
+    {
+        padding: 12px;
+    }
+
+
+    .accordion_item .head .title
+    {
+        font-size: 16px;
+
+        width: calc(100% - 72px);
+    }
+
+
+    .accordion_item .head .icon
+    {
+        width: 52px;
+        height: 52px;
+    }
+
+
+    .accordion_item .data
+    {
+        margin-top: 0;
+        padding: 0 20px 30px 84px;
+    }
+
+
+    .accordion_item .data .text
+    {
+        line-height: 20px;
+
+        gap: 12px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header .logo img
+    {
+        width: 80px;
+        height: 80px;
+    }
+
+
+    header .messengers a
+    {
+        width: 52px;
+        height: 52px;
+    }
+
+
+    header .messengers .icon
+    {
+        width: 20px;
+        height: 20px;
+    }
+
+
+    header .feedback_btn
+    {
+        height: 52px;
+        padding: 0 32px;
+    }
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head
+    {
+        margin-bottom: 60px;
+    }
+
+
+    .block_head.small_m
+    {
+        margin-bottom: 52px;
+    }
+
+
+    .block_head .desc
+    {
+        font-size: 20px;
+    }
+
+
+    .block_head .all_link a
+    {
+        font-size: 18px;
+
+        width: 300px;
+        min-height: 0;
+        padding: 24px 32px;
+    }
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+    .form .input
+    {
+        height: 64px;
+        padding: 0 23px;
+    }
+
+
+    .form .submit_btn
+    {
+        font-size: 20px;
+
+        padding: 24px 32px;
+    }
+
+
+
+    /*-------------------
+        First section
+    -------------------*/
+    .first_section .head .data
+    {
+        width: 60%;
+        margin: 0 0 0 auto;
+
+        transform: none;
+
+        gap: 30px;
+    }
+
+
+    .first_section .head
+    {
+        height: 680px;
+
+        border-radius: 10px;
+    }
+
+
+    .first_section .head .desc
+    {
+        font-size: 20px;
+
+        width: 316px;
+        margin-right: 60px;
+    }
+
+
+    .first_section .head .btn
+    {
+        min-width: 220px;
+        margin-top: 0;
+        margin-right: 60px;
+        padding: 24px 32px;
+    }
+
+
+    .first_section .head .image
+    {
+        right: auto;
+        left: 80px;
+
+        width: 424px;
+        height: 620px;
+    }
+
+
+
+    /*-----------
+        Steps
+    -----------*/
+    .steps
+    {
+        margin-top: -40px;
+    }
+
+
+    .steps .row
+    {
+        display: block;
+        overflow: auto;
+
+        width: calc(100% + calc((var(--cont_padding) + var(--offset)) * 2));
+        margin: 0 calc((var(--cont_padding) + var(--offset)) * -1);
+        padding: 0 calc(var(--cont_padding) + var(--offset));
+
+        white-space: nowrap;
+
+        scroll-padding: 0 calc(var(--cont_padding) + var(--offset));
+        scroll-snap-type: x mandatory;
+        scrollbar-color: transparent transparent !important;
+        scrollbar-width: thin !important;
+    }
+
+
+    .steps .row::-webkit-scrollbar
+    {
+        display: none !important;
+
+        width: 0 !important;
+        height: 0 !important;
+
+        background-color: transparent !important;
+    }
+
+
+    .steps .row::-webkit-scrollbar-thumb
+    {
+        background-color: transparent !important;
+    }
+
+
+    .steps .row > *
+    {
+        display: inline-block;
+
+        max-width: none;
+        margin: 0;
+
+        vertical-align: top;
+        white-space: normal;
+
+        scroll-snap-align: start;
+    }
+
+
+    .steps .row > * + *
+    {
+        margin-left: 6px;
+    }
+
+
+    .steps .step
+    {
+        width: 319px;
+    }
+
+
+    .steps .step .number
+    {
+        font-size: 14px;
+        line-height: 17px;
+
+        margin-bottom: 26px;
+
+        border: none;
+    }
+
+
+    .steps .step .name
+    {
+        font-size: 22px;
+        line-height: 125%;
+    }
+
+
+    .steps .step .logos
+    {
+        margin-top: 22px;
+
+        gap: 8px;
+    }
+
+
+    .steps .step .logos .logo
+    {
+        width: 136px;
+        max-width: calc(50% - 4px);
+        height: 60px;
+        padding: 7px 14px;
+
+        border-radius: 10px;
+    }
+
+
+    .steps .step .desc
+    {
+        display: none;
+    }
+
+
+    .steps .step .btns
+    {
+        margin-top: 22px;
+
+        gap: 12px;
+    }
+
+
+    .steps .step .btns .btn
+    {
+        font-size: 14px;
+        line-height: 16px;
+
+        padding: 24px;
+    }
+
+
+
+    .steps .step1
+    {
+        overflow: hidden;
+
+        height: 400px;
+        padding: 20px;
+
+        border: none;
+        border-radius: 10px;
+        box-shadow: none;
+    }
+
+
+    .steps .step1 .number
+    {
+        padding: 16px 26px;
+    }
+
+
+    .steps .step1 .image
+    {
+        bottom: -12px;
+        left: 0;
+
+        width: 100%;
+    }
+
+
+    .steps .step2
+    {
+        width: 319px;
+        height: 400px;
+        padding: 20px 20px 120px;
+
+        border-radius: 10px;
+        background: #fff;
+    }
+
+
+    .steps .step2 .image
+    {
+        bottom: 50px;
+    }
+
+
+    .steps .step3
+    {
+        height: 400px;
+        padding: 20px;
+
+        border-radius: 10px;
+        background: #fff;
+    }
+
+
+
+    /*----------------
+        Secret map
+    ----------------*/
+    .secret_map .data
+    {
+        padding: 80px var(--cont_padding) 68px;
+
+        border-radius: 10px;
+    }
+
+
+    .secret_map .info
+    {
+        width: 428px;
+    }
+
+
+    .secret_map .info .desc
+    {
+        font-size: 22px;
+
+        width: 100%;
+        margin-top: 40px;
+    }
+
+
+    .secret_map .info .desc .icon
+    {
+        width: 92px;
+        height: 92px;
+    }
+
+
+    .secret_map .info .desc .icon:after
+    {
+        width: 180px;
+        height: 180px;
+    }
+
+
+    .secret_map .info .desc .icon > svg
+    {
+        width: 38px;
+        height: 38px;
+    }
+
+
+    .secret_map .info .desc .icon .lock
+    {
+        top: -8px;
+        right: -8px;
+
+        width: 40px;
+        height: 40px;
+    }
+
+
+    .secret_map .info .desc .icon .lock svg
+    {
+        width: 22px;
+        height: 22px;
+    }
+
+
+    .secret_map .you_get_wrap
+    {
+        width: 460px;
+    }
+
+
+    .secret_map .you_get_wrap > .label
+    {
+        font-size: 14px;
+
+        top: -21px;
+    }
+
+
+    .secret_map .you_get
+    {
+        padding: 71px 39px 39px;
+    }
+
+
+    .secret_map .you_get .items .icon svg
+    {
+        width: 26px;
+        height: 26px;
+    }
+
+
+    .secret_map .you_get .items .name
+    {
+        font-size: 18px;
+    }
+
+
+    .secret_map .you_get .items .desc
+    {
+        font-size: 12px;
+    }
+
+
+    .secret_map .you_get .buy
+    {
+        padding-left: 27px;
+    }
+
+
+    .secret_map .you_get .buy .price .label
+    {
+        font-size: 12px;
+
+        margin-bottom: 8px;
+    }
+
+
+    .secret_map .you_get .buy .price .val
+    {
+        font-size: 36px;
+    }
+
+
+    .secret_map .you_get .buy .btn
+    {
+        font-size: 18px;
+
+        padding: 20px 32px;
+    }
+
+
+
+    /*------------
+        Routes
+    ------------*/
+    .routes .row
+    {
+        display: block;
+        overflow: auto;
+
+        width: calc(100% + calc((var(--cont_padding) + var(--offset)) * 2));
+        margin: 0 calc((var(--cont_padding) + var(--offset)) * -1);
+        padding: 0 calc(var(--cont_padding) + var(--offset));
+
+        white-space: nowrap;
+
+        scroll-padding: 0 calc(var(--cont_padding) + var(--offset));
+        scroll-snap-type: x mandatory;
+        scrollbar-color: transparent transparent !important;
+        scrollbar-width: thin !important;
+    }
+
+
+    .routes .row::-webkit-scrollbar
+    {
+        display: none !important;
+
+        width: 0 !important;
+        height: 0 !important;
+
+        background-color: transparent !important;
+    }
+
+
+    .routes .row::-webkit-scrollbar-thumb
+    {
+        background-color: transparent !important;
+    }
+
+
+    .routes .row > *
+    {
+        display: inline-block;
+
+        width: 319px;
+        max-width: none;
+        margin: 0;
+
+        vertical-align: top;
+        white-space: normal;
+
+        scroll-snap-align: start;
+    }
+
+
+    .routes .row > * + *
+    {
+        margin-left: 6px;
+    }
+
+
+    .routes .route
+    {
+        border-radius: 10px 10px 36px 10px;
+    }
+
+
+    .routes .route .thumb
+    {
+        height: 383px;
+    }
+
+
+    .routes .route .top
+    {
+        padding: 28px 20px;
+
+        border-radius: 10px;
+
+        gap: 12px;
+    }
+
+
+    .routes .route .top .name
+    {
+        font-size: 22px;
+    }
+
+
+    .routes .route .top .desc
+    {
+        font-size: 14px;
+        line-height: 125%;
+    }
+
+
+    .routes .route .preview
+    {
+        right: 19px;
+        bottom: 122px;
+
+        opacity: 1;
+    }
+
+
+    .routes .route .preview .icon
+    {
+        width: 24px;
+        height: 24px;
+
+        opacity: 1;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, .25);
+    }
+
+
+    .routes .route .preview .icon svg
+    {
+        width: 17px;
+        height: 17px;
+    }
+
+
+    .routes .route .preview .image
+    {
+        width: 103px;
+        height: 130px;
+
+        border-radius: 12px;
+    }
+
+
+    .routes .route .bottom
+    {
+        gap: 8px;
+    }
+
+
+    .routes .route .bottom .exp
+    {
+        font-size: 12px;
+        line-height: 140%;
+
+        padding-bottom: 12px;
+        padding-left: 10px;
+    }
+
+
+    .routes .route .bottom .buy
+    {
+        flex-direction: column;
+
+        width: 125px;
+        min-width: 125px;
+        max-width: 100%;
+        padding: 13px 4px 4px;
+
+        text-align: center;
+
+        border-radius: 32px;
+    }
+
+
+    .routes .route .bottom .buy .price
+    {
+        font-size: 22px;
+    }
+
+
+    .routes .route .bottom .buy .btn
+    {
+        font-size: 14px;
+
+        width: 100%;
+        padding: 15px;
+
+        color: var(--text_color);
+        border-radius: 10px 10px 24px 24px;
+        background: #fff;
+    }
+
+
+
+    /*---------------
+        Buy block
+    ---------------*/
+    .buy_block .data
+    {
+        margin-top: 24px;
+        padding: 4px;
+
+        border-radius: 10px;
+    }
+
+
+    .buy_block .packages
+    {
+        width: 50%;
+        padding: 24px;
+    }
+
+
+    .buy_block .packages .label
+    {
+        font-size: 14px;
+
+        top: -32px;
+
+        padding: 15px 23px;
+    }
+
+
+    .buy_block .packages label .check
+    {
+        top: 20px;
+        left: 20px;
+    }
+
+
+    .buy_block .packages label .check + div
+    {
+        font-size: 20px;
+
+        padding: 24px 24px 24px 68px;
+    }
+
+
+    .buy_block .packages label .discount
+    {
+        font-size: 12px;
+
+        width: calc(100% + 92px);
+        margin-right: -24px;
+        margin-bottom: -24px;
+        margin-left: -68px;
+        padding: 7px 8px 8px;
+
+        gap: 8px;
+    }
+
+
+    .buy_block .packages label .discount span
+    {
+        padding: 4px 10px;
+    }
+
+
+    .buy_block .packages label .super_discount
+    {
+        font-size: 14px;
+
+        margin-top: -10px;
+        padding: 18px 8px 8px;
+    }
+
+
+
+    .buy_block .buy
+    {
+        width: 50%;
+
+        border-radius: 10px;
+    }
+
+
+    .buy_block .buy .title
+    {
+        font-size: 40px;
+
+        padding: 52px 32px 40px;
+    }
+
+
+    .buy_block .buy .price
+    {
+        padding: 40px;
+    }
+
+
+    .buy_block .buy .price:before
+    {
+        width: 500px;
+        height: 500px;
+    }
+
+
+    .buy_block .buy .price:after
+    {
+        width: calc(100% - 80px);
+    }
+
+
+    .buy_block .buy .price .label
+    {
+        font-size: 18px;
+
+        margin-bottom: 16px;
+    }
+
+
+    .buy_block .buy .price .val
+    {
+        font-size: 60px;
+    }
+
+
+    .buy_block .buy .btn
+    {
+        font-size: 18px;
+
+        width: 300px;
+        margin-top: 30px;
+        padding: 24px 32px;
+    }
+
+
+
+    /*----------------
+        Additional
+    ----------------*/
+    .additional .row
+    {
+        margin-bottom: -5px;
+        margin-left: 0;
+    }
+
+
+    .additional .row > *
+    {
+        margin-bottom: 5px;
+        margin-left: 0;
+    }
+
+
+    .additional .item1
+    {
+        width: 100%;
+        padding: 47px;
+
+        border-radius: 10px;
+
+        gap: 48px;
+    }
+
+
+    .additional .item1 .items > *
+    {
+        font-size: 18px;
+    }
+
+
+    .additional .item1 .btn
+    {
+        font-size: 18px;
+
+        padding: 10px 10px 10px 40px;
+    }
+
+
+    .additional .item1 .btn .icon
+    {
+        width: 60px;
+        height: 60px;
+    }
+
+
+    .additional .item1 .btn .icon svg
+    {
+        width: 28px;
+        height: 28px;
+    }
+
+
+
+    .additional .item2
+    {
+        width: 100%;
+
+        border-radius: 10px;
+    }
+
+
+    .additional .item2 .top
+    {
+        padding: 48px 60px;
+
+        gap: 20px;
+    }
+
+
+    .additional .item2 .desc
+    {
+        font-size: 20px;
+    }
+
+
+    .additional .item2 .bottom
+    {
+        padding: 48px 60px;
+    }
+
+
+    .additional .item2 .timer
+    {
+        font-size: 18px;
+
+        padding: 10px 10px 10px 24px;
+    }
+
+
+    .additional .item2 .timer .val
+    {
+        gap: 20px;
+    }
+
+
+    .additional .item2 .timer .days
+    {
+        font-size: 24px;
+    }
+
+
+    .additional .item2 .timer .details
+    {
+        padding: 10px 20px;
+    }
+
+
+    .additional .item2 .buy_btn
+    {
+        font-size: 24px;
+
+        width: 440px;
+        min-height: 0;
+        padding: 24px 32px;
+
+        gap: 10px;
+    }
+
+
+
+    .additional .item3
+    {
+        width: 100%;
+        padding: 60px;
+
+        border-radius: 10px;
+    }
+
+
+    .additional .item3 .info
+    {
+        width: 672px;
+    }
+
+
+    .additional .item3 .desc
+    {
+        font-size: 16px;
+
+        width: 480px;
+        margin-top: -44px;
+    }
+
+
+    .additional .item3 .download
+    {
+        width: 480px;
+    }
+
+
+    .additional .item3 .download .link
+    {
+        font-size: 18px;
+
+        padding: 10px 10px 10px 40px;
+    }
+
+
+    .additional .item3 .download .link .icon
+    {
+        width: 60px;
+        height: 60px;
+    }
+
+
+    .additional .item3 .download .link .icon svg
+    {
+        width: 24px;
+        height: 24px;
+    }
+
+
+
+    /*-------------
+        Reviews
+    -------------*/
+    .reviews .block_head
+    {
+        gap: 20px;
+    }
+
+
+    .reviews .swiper
+    {
+        padding-bottom: 39px;
+    }
+
+
+    .reviews .review .col_left
+    {
+        width: 120px;
+
+        gap: 12px;
+    }
+
+
+    .reviews .review .col_main
+    {
+        width: calc(100% - 144px);
+
+        gap: 20px;
+    }
+
+
+    .reviews .review .date
+    {
+        font-size: 14px;
+    }
+
+
+    .reviews .review .name
+    {
+        font-size: 24px;
+    }
+
+
+    .reviews .review .text
+    {
+        font-size: 13px;
+
+        gap: 12px;
+    }
+
+
+
+    /*---------
+        FAQ
+    ---------*/
+    .FAQ .label
+    {
+        font-size: 20px;
+
+        padding: 15px 23px;
+    }
+
+
+    .FAQ .cont > .data
+    {
+        width: calc(100% - 200px);
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer .data
+    {
+        padding-top: 80px;
+
+        border-radius: 10px;
+    }
+
+
+    footer .data:after
+    {
+        height: 200px;
+    }
+
+
+    footer .btns
+    {
+        width: 600px;
+        margin-top: 30px;
+        padding-bottom: 23px;
+    }
+
+
+    footer .btns .btn
+    {
+        font-size: 20px;
+
+        padding: 24px 32px;
+    }
+
+
+    footer .data .row
+    {
+        width: 600px;
+        margin-top: 24px;
+    }
+
+
+    footer .socials .items a
+    {
+        width: 60px;
+        height: 60px;
+    }
+
+
+    footer .socials .items .icon
+    {
+        width: 20px;
+        height: 20px;
+    }
+
+
+    footer .question_btn
+    {
+        font-size: 14px;
+
+        height: 60px;
+        padding: 0 32px;
+    }
+
+
+    footer .bottom
+    {
+        margin-top: 80px;
+    }
+
+
+    footer .requisites .label
+    {
+        font-size: 12px;
+
+        margin-bottom: 12px;
+    }
+
+
+    footer .requisites .items
+    {
+        font-size: 12px;
+
+        gap: 24px;
+    }
+
+
+    footer .creator a
+    {
+        font-size: 12px;
+        line-height: 18px;
+
+        padding: 8px 16px;
+    }
+
+
+
+    /*-----------
+        PopUp
+    -----------*/
+    .modal
+    {
+        width: 600px;
+        padding: 48px 48px 60px;
+
+        border-radius: 10px;
+    }
+
+
+    .modal_title
+    {
+        font-size: 40px;
+    }
+
+
+    .modal_desc
+    {
+        font-size: 14px;
+    }
+
+
+    .modal_desc .count
+    {
+        padding: 4px 10px;
+    }
+
+
+
+    /*-----------------------
+        PopUp - Buy modal
+    -----------------------*/
+    .buy_modal .selected_routes
+    {
+        font-size: 14px;
+    }
+
+
+    .buy_modal .selected_routes span
+    {
+        padding: 4px 10px;
+    }
+
+
+    .buy_modal .items
+    {
+        margin-top: 30px;
+    }
+
+
+    .buy_modal .items label .check
+    {
+        top: 14px;
+    }
+
+
+    .buy_modal .items label .check + div
+    {
+        padding: 20px 20px 20px 68px;
+    }
+
+
+    .buy_modal .price .label
+    {
+        font-size: 12px;
+    }
+
+
+    .buy_modal .price .val
+    {
+        font-size: 36px;
+    }
+
+
+    .buy_modal .next_btn
+    {
+        width: 300px;
+        padding: 24px 32px;
+    }
+
+
+
+    /*---------------------------
+        PopUp - Success modal
+    ---------------------------*/
+    .modal.success
+    {
+        width: 520px;
+        padding: 60px;
+    }
+
+
+    .modal.success .icon svg
+    {
+        width: 120px;
+        height: 120px;
+    }
+
+
+    .modal.success .close_btn
+    {
+        width: 300px;
+        padding: 24px 32px;
+    }
+}

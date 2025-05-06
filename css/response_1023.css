@@ -1,0 +1,387 @@
+@media print,
+(max-width: 1023px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size_title: 48px;
+    }
+
+
+    .swiper-button-next,
+    .swiper-button-prev
+    {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 50px;
+    }
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head,
+    .block_head.small_m
+    {
+        margin-bottom: 48px;
+    }
+
+
+    .block_head .desc
+    {
+        font-size: 18px;
+    }
+
+
+    .block_head .all_link a
+    {
+        width: 240px;
+    }
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+    .form .input
+    {
+        font-size: 14px;
+
+        height: 60px;
+        padding: 0 19px;
+    }
+
+
+    .form .submit_btn
+    {
+        font-size: 18px;
+    }
+
+
+
+    /*-------------------
+        First section
+    -------------------*/
+    .first_section .head .data
+    {
+        gap: 20px;
+    }
+
+
+    .first_section .head .desc
+    {
+        font-size: 18px;
+
+        width: 300px;
+        margin-right: 40px;
+    }
+
+
+    .first_section .head .btn
+    {
+        margin-right: 40px;
+    }
+
+
+    .first_section .head .image
+    {
+        left: 40px;
+
+        width: 360px;
+        height: 526px;
+    }
+
+
+
+    /*-----------
+        Steps
+    -----------*/
+    .steps
+    {
+        margin-top: -24px;
+    }
+
+
+
+    /*----------------
+        Secret map
+    ----------------*/
+    .secret_map .info
+    {
+        width: 612px;
+        margin-right: auto;
+        margin-bottom: 80px;
+        margin-left: auto;
+    }
+
+
+    .secret_map .info .desc
+    {
+        width: 428px;
+        margin-top: -40px;
+    }
+
+
+    .secret_map .you_get_wrap
+    {
+        width: 480px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+
+
+    /*---------------
+        Buy block
+    ---------------*/
+    .buy_block .block_head
+    {
+        display: block;
+    }
+
+
+    .buy_block .data
+    {
+        margin: 0;
+        padding: 0;
+
+        border: none;
+        border-radius: 0;
+    }
+
+
+    .buy_block .packages
+    {
+        width: 100%;
+        padding: 0;
+    }
+
+
+    .buy_block .packages .label
+    {
+        display: none;
+    }
+
+
+    .buy_block .buy
+    {
+        display: none;
+    }
+
+
+
+    /*----------------
+        Additional
+    ----------------*/
+    .additional .item1
+    {
+        padding: 48px 20px;
+    }
+
+
+    .additional .item1 .items
+    {
+        gap: 30px;
+    }
+
+
+    .additional .item1 .items > *
+    {
+        font-size: 16px;
+
+        width: 198px;
+    }
+
+
+    .additional .item1 .btn
+    {
+        font-size: 16px;
+    }
+
+
+    .additional .item1 .btn .icon
+    {
+        width: 52px;
+        height: 52px;
+    }
+
+
+    .additional .item1 .btn .icon svg
+    {
+        width: 24px;
+        height: 24px;
+    }
+
+
+    .additional .item2 .top
+    {
+        padding: 48px;
+    }
+
+
+    .additional .item2 .bottom
+    {
+        padding: 48px;
+    }
+
+
+    .additional .item3
+    {
+        padding: 48px;
+    }
+
+
+    .additional .item3 .info
+    {
+        width: 536px;
+    }
+
+
+    .additional .item3 .desc
+    {
+        font-size: 14px;
+
+        width: 380px;
+        margin-top: -40px;
+    }
+
+
+    .additional .item3 .download
+    {
+        width: 380px;
+    }
+
+
+    .additional .item3 .download .link
+    {
+        font-size: 16px;
+    }
+
+
+    .additional .item3 .download .link .icon
+    {
+        width: 52px;
+        height: 52px;
+    }
+
+
+    .additional .item3 .download .link .icon svg
+    {
+        width: 24px;
+        height: 24px;
+    }
+
+
+
+    /*-------------
+        Reviews
+    -------------*/
+    .reviews .review .col_left
+    {
+        width: 100px;
+    }
+
+
+    .reviews .review .col_main
+    {
+        width: calc(100% - 120px);
+    }
+
+
+
+    /*---------
+        FAQ
+    ---------*/
+    .FAQ .label
+    {
+        font-size: 18px;
+
+        margin-bottom: 30px;
+    }
+
+
+    .FAQ .cont > .data
+    {
+        width: 100%;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer .data
+    {
+        padding-top: 68px;
+    }
+
+
+    footer .btns
+    {
+        width: 580px;
+    }
+
+
+    footer .btns .btn
+    {
+        font-size: 18px;
+    }
+
+
+    footer .data .row
+    {
+        width: 580px;
+    }
+
+
+
+    /*-----------
+        PopUp
+    -----------*/
+    .modal
+    {
+        width: 520px;
+        padding: 40px 40px 48px;
+    }
+
+
+    .modal_title
+    {
+        font-size: 36px;
+    }
+
+
+
+    /*-----------------------
+        PopUp - Buy modal
+    -----------------------*/
+    .buy_modal .modal_title
+    {
+        font-size: 36px;
+    }
+
+
+    .buy_modal .next_btn
+    {
+        width: 260px;
+    }
+
+
+
+    /*---------------------------
+        PopUp - Success modal
+    ---------------------------*/
+    .modal.success
+    {
+        padding: 60px 40px;
+    }
+
+
+    .modal.success .close_btn
+    {
+        width: 260px;
+    }
+}

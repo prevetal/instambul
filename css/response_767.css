@@ -1,0 +1,1045 @@
+@media (max-width: 767px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size_title: 42px;
+    }
+
+
+    .swiper-button-next,
+    .swiper-button-prev
+    {
+        bottom: 0;
+
+        width: 68px;
+        height: 68px;
+        margin-bottom: 0;
+    }
+
+
+    .swiper-button-prev
+    {
+        right: 73px;
+        left: auto;
+
+        transform: none;
+    }
+
+
+    .swiper-button-next
+    {
+        right: 0;
+
+        transform: none;
+    }
+
+
+
+    /*--------------
+        Fancybox
+    --------------*/
+    .fancybox__content > .f-button.is-close-btn,
+    .is-compact .fancybox__content > .f-button.is-close-btn
+    {
+        top: -63px;
+        right: 0;
+
+        --f-button-bg: #fff;
+        --f-button-hover-bg: #fff;
+        --f-button-active-bg: #fff;
+    }
+
+
+
+
+    /*---------------
+        Accordion
+    ---------------*/
+    .accordion_item .head
+    {
+        padding: 14px;
+    }
+
+
+    .accordion_item .head .icon
+    {
+        width: 44px;
+        height: 44px;
+    }
+
+
+    .accordion_item .head .icon svg
+    {
+        width: 14px;
+        height: 14px;
+    }
+
+
+    .accordion_item .head .title
+    {
+        font-size: 14px;
+        line-height: 135%;
+
+        width: calc(100% - 56px);
+    }
+
+
+    .accordion_item .data
+    {
+        padding: 8px 14px 14px;
+    }
+
+
+    .accordion_item .data .text
+    {
+        font-size: 12px;
+        line-height: 160%;
+    }
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+    .form .columns
+    {
+        --form_columns_offset: 8px;
+    }
+
+
+    .form .line
+    {
+        margin-bottom: 8px;
+    }
+
+
+    .form .input
+    {
+        height: 62px;
+
+        border-radius: 23px;
+    }
+
+
+    .form .submit_btn
+    {
+        font-size: 14px;
+        line-height: 130%;
+
+        padding: 22px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header .logo img
+    {
+        width: 46px;
+        height: 46px;
+    }
+
+
+    header .contacts
+    {
+        gap: 6px;
+    }
+
+
+    header .messengers
+    {
+        gap: 4px;
+    }
+
+
+    header .messengers a
+    {
+        width: 46px;
+        height: 46px;
+    }
+
+
+    header .messengers .icon
+    {
+        width: 18px;
+        height: 18px;
+    }
+
+
+    header .feedback_btn
+    {
+        font-size: 12px;
+
+        height: 46px;
+        padding: 0 30px;
+    }
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head,
+    .block_head.small_m
+    {
+        margin-bottom: 40px;
+    }
+
+
+    .block_head .desc
+    {
+        font-size: 22px;
+    }
+
+
+    .block_head .all_link
+    {
+        position: absolute;
+        bottom: 0;
+        left: var(--cont-padding);
+
+        margin: 0;
+    }
+
+
+    .block_head .all_link a
+    {
+        font-size: 14px;
+
+        width: auto;
+        padding: 26px 35px;
+    }
+
+
+
+    /*-------------------
+        First section
+    -------------------*/
+    .first_section .head .data
+    {
+        width: 100%;
+
+        gap: 24px;
+    }
+
+
+    .first_section .head
+    {
+        height: 804px;
+    }
+
+
+    .first_section .head .desc
+    {
+        font-size: 18px;
+        line-height: 145%;
+
+        width: 273px;
+        margin-right: 0;
+    }
+
+
+    .first_section .head .btn
+    {
+        font-size: 14px;
+
+        min-width: 200px;
+        margin-right: 0;
+        padding: 20px 24px;
+    }
+
+
+    .first_section .head .image
+    {
+        right: auto;
+        left: 80px;
+
+        width: 424px;
+        height: 620px;
+    }
+
+
+    .first_section .head .image
+    {
+        left: 20px;
+
+        width: 300px;
+        height: 439px;
+    }
+
+
+
+    /*----------------
+        Secret map
+    ----------------*/
+    .secret_map .data
+    {
+        padding: 40px 0;
+    }
+
+
+    .secret_map .info
+    {
+        width: 100%;
+        margin-bottom: 70px;
+        padding: 0 20px;
+    }
+
+    .secret_map .info .desc
+    {
+        font-size: 18px;
+
+        width: calc(100% + 80px);
+        max-width: calc(100% + 80px);
+        margin-top: 20px;
+        margin-left: -60px;
+    }
+
+
+    .secret_map .info .desc .icon
+    {
+        width: 74px;
+        height: 74px;
+    }
+
+
+    .secret_map .info .desc .icon > svg
+    {
+        width: 31px;
+        height: 31px;
+    }
+
+
+    .secret_map .info .desc .icon + *
+    {
+        width: calc(100% - 96px);
+    }
+
+
+    .secret_map .info .desc .icon .lock
+    {
+        top: -7px;
+        right: -7px;
+
+        width: 33px;
+        height: 33px;
+    }
+
+
+    .secret_map .info .desc .icon .lock svg
+    {
+        width: 19px;
+        height: 19px;
+    }
+
+
+    .secret_map .you_get_wrap > .label
+    {
+        font-size: 12px;
+    }
+
+
+    .secret_map .you_get
+    {
+        padding: 71px 19px 29px;
+    }
+
+
+    .secret_map .you_get:before
+    {
+        top: 24px;
+    }
+
+
+    .secret_map .you_get .items > * + *
+    {
+        margin-top: 20px;
+    }
+
+
+    .secret_map .you_get .items .icon svg
+    {
+        width: 18px;
+        height: 18px;
+    }
+
+
+    .secret_map .you_get .items .icon + *
+    {
+        width: calc(100% - 36px);
+    }
+
+
+    .secret_map .you_get .items .name
+    {
+        font-size: 16px;
+    }
+
+
+    .secret_map .you_get .items .desc
+    {
+        gap: 10px;
+    }
+
+
+    .secret_map .you_get .buy
+    {
+        margin-top: 34px;
+        padding-left: 29px;
+    }
+
+
+    .secret_map .you_get .buy .btn
+    {
+        font-size: 16px;
+
+        padding: 20px 30px;
+    }
+
+
+    .secret_map .you_get .buy .price .label
+    {
+        margin-bottom: 4px;
+    }
+
+
+    .secret_map .you_get .buy .price .val
+    {
+        font-size: 32px;
+    }
+
+
+
+    /*---------------
+        Buy block
+    ---------------*/
+    .buy_block .packages .items
+    {
+        gap: 5px;
+    }
+
+
+    .buy_block .packages label .check + div:before
+    {
+        display: none;
+    }
+
+
+    .buy_block .packages label .check + div
+    {
+        font-size: 18px;
+
+        padding: 20px 16px 16px;
+    }
+
+
+    .buy_block .packages label .check
+    {
+        display: none;
+    }
+
+
+    .buy_block .packages label .discount
+    {
+        font-size: 12px;
+        line-height: 125%;
+
+        display: block;
+
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 0;
+        margin-left: 0;
+        padding: 15px 0 0;
+    }
+
+
+    .buy_block .packages label .discount span
+    {
+        padding: 0;
+
+        color: currentColor;
+        border-radius: 0;
+        background: none;
+    }
+
+
+    .buy_block .packages label .mob_select
+    {
+        display: flex;
+    }
+
+
+    .buy_block .packages label input:checked + .check + div
+    {
+        color: currentColor;
+        background: #ededed;
+    }
+
+
+    .buy_block .packages label input:checked + .check + div .discount
+    {
+        border-color: rgba(0, 0, 0, .10);
+    }
+
+
+
+    /*----------------
+        Additional
+    ----------------*/
+    .additional .item1
+    {
+        padding: 32px 16px;
+
+        gap: 32px;
+    }
+
+
+    .additional .item1 .items
+    {
+        gap: 24px;
+    }
+
+
+    .additional .item1 .items > *
+    {
+        width: 100%;
+
+        text-align: center;
+
+        gap: 12px;
+    }
+
+
+    .additional .item1 .items > * br
+    {
+        display: none;
+    }
+
+
+    .additional .item1 .items .number
+    {
+        font-size: 14px;
+
+        left: 50%;
+
+        width: 32px;
+        height: 32px;
+        margin-left: -70px;
+
+        border-width: 1px;
+    }
+
+
+    .additional .item1 .items .icon
+    {
+        width: 140px;
+        height: 140px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+
+    .additional .item1 .items .sep
+    {
+        width: 100%;
+        height: 1px;
+    }
+
+
+    .additional .item1 .items > *:nth-child(3) .icon:before
+    {
+        width: 234px;
+        height: 234px;
+    }
+
+
+    .additional .item1 .btn
+    {
+        padding: 6px 6px 6px 36px;
+    }
+
+
+    .additional .item1 .btn .icon
+    {
+        width: 68px;
+        height: 68px;
+    }
+
+
+    .additional .item1 .btn .icon svg
+    {
+        width: 30px;
+        height: 30px;
+    }
+
+
+
+    .additional .item2
+    {
+        min-height: 606px;
+    }
+
+
+    .additional .item2 .top
+    {
+        padding: 32px 16px;
+
+        text-align: center;
+
+        gap: 22px;
+    }
+
+
+    .additional .item2 .desc
+    {
+        font-size: 22px;
+    }
+
+
+    .additional .item2 .bottom
+    {
+        padding: 32px 16px;
+
+        gap: 18px;
+    }
+
+
+    .additional .item2 .timer
+    {
+        font-size: 14px;
+
+        justify-content: center;
+
+        width: 100%;
+        padding: 12px 14px 12px 18px;
+    }
+
+
+    .additional .item2 .timer .val
+    {
+        gap: 26px;
+    }
+
+
+    .additional .item2 .timer .days
+    {
+        font-size: 22px;
+    }
+
+
+    .additional .item2 .timer .details
+    {
+        padding: 12px 20px;
+    }
+
+
+    .additional .item2 .buy_btn
+    {
+        font-size: 22px;
+
+        justify-content: center;
+
+        width: 100%;
+        padding: 30px;
+
+        gap: 10px;
+    }
+
+
+    .additional .item2 .buy_btn small
+    {
+        font-size: 14px;
+    }
+
+
+
+    .additional .item3
+    {
+        min-height: 730px;
+        padding: 63px 16px;
+    }
+
+
+    .additional .item3 .desc
+    {
+        line-height: 155%;
+
+        width: 100%;
+        margin-top: 22px;
+    }
+
+
+    .additional .item3 .download
+    {
+        width: 100%;
+        margin-top: 32px;
+    }
+
+
+    .additional .item3 .download .link
+    {
+        padding: 6px 6px 6px 39px;
+    }
+
+
+    .additional .item3 .download .link .icon
+    {
+        width: 68px;
+        height: 68px;
+    }
+
+
+    .additional .item3 .download .link .icon svg
+    {
+        width: 30px;
+        height: 30px;
+    }
+
+
+    .additional .item3 .image img
+    {
+        display: none;
+    }
+
+
+    .additional .item3 .image img.mob
+    {
+        display: block;
+    }
+
+
+
+    /*-------------
+        Reviews
+    -------------*/
+    .reviews .swiper
+    {
+        padding-bottom: 104px;
+
+        border: none;
+    }
+
+
+    .reviews .block_head
+    {
+        margin-bottom: 32px;
+        padding-bottom: 32px;
+
+        border-bottom: 1px solid #d9d9d9;
+
+        gap: 18px;
+    }
+
+
+    .reviews .review .date
+    {
+        font-size: 12px;
+    }
+
+
+    .reviews .review .name
+    {
+        font-size: 22px;
+    }
+
+
+    .reviews .review .text
+    {
+        font-size: 12px;
+        line-height: 165%;
+    }
+
+
+
+    /*---------
+        FAQ
+    ---------*/
+    .FAQ .label
+    {
+        font-size: 16px;
+
+        margin-bottom: 20px;
+        padding: 19px 29px;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer .data
+    {
+        padding: 32px 0;
+    }
+
+
+    footer .data:after
+    {
+        height: 487px;
+    }
+
+
+    footer .block_head
+    {
+        margin-bottom: 28px;
+    }
+
+
+    footer .btns
+    {
+        flex-direction: column;
+
+        width: 100%;
+        margin-top: 0;
+        padding-bottom: 29px;
+
+        gap: 12px;
+    }
+
+
+    footer .btns .btn
+    {
+        font-size: 14px;
+
+        width: 100%;
+        max-width: 100%;
+        padding: 26px;
+    }
+
+
+    footer .data .row
+    {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+
+    footer .socials .label
+    {
+        font-size: 12px;
+    }
+
+
+    footer .socials .items
+    {
+        gap: 4px;
+    }
+
+
+    footer .socials .items a
+    {
+        width: 46px;
+        height: 46px;
+    }
+
+
+    footer .socials .items .icon
+    {
+        width: 18px;
+        height: 18px;
+    }
+
+
+    footer .question_btn
+    {
+        width: 100%;
+        height: auto;
+        margin-top: 17px;
+        padding: 17px;
+    }
+
+
+    footer .bottom
+    {
+        margin-top: 48px;
+    }
+
+
+    footer .requisites
+    {
+        width: 100%;
+    }
+
+
+    footer .requisites .items
+    {
+        flex-direction: column;
+
+        gap: 12px;
+    }
+
+
+
+    footer .creator
+    {
+        margin: 40px auto 0;
+    }
+
+
+    footer .creator a
+    {
+        padding: 10px 20px;
+    }
+
+
+
+    /*-----------
+        PopUp
+    -----------*/
+    .modal
+    {
+        width: 355px;
+        padding: 28px 20px;
+    }
+
+
+    .modal_title
+    {
+        font-size: 32px;
+    }
+
+
+    .modal_desc
+    {
+        font-size: 12px;
+        line-height: 156%;
+
+        margin-top: 16px;
+    }
+
+
+    .modal .form
+    {
+        margin-top: 28px;
+    }
+
+
+
+    /*-----------------------
+        PopUp - Buy modal
+    -----------------------*/
+    .buy_modal .modal_title
+    {
+        font-size: 32px;
+    }
+
+
+    .buy_modal .selected_routes
+    {
+        font-size: 12px;
+
+        gap: 6px;
+    }
+
+
+    .buy_modal .items label .check
+    {
+        top: 12px;
+        left: 12px;
+
+        width: 21px;
+        height: 21px;
+    }
+
+
+    .buy_modal .items label .check:after
+    {
+        width: 5px;
+        height: 5px;
+
+        border-radius: 1px;
+    }
+
+
+    .buy_modal .items label .check + div
+    {
+        font-size: 12px;
+
+        padding: 16px 16px 16px 41px;
+
+        border-radius: 6px;
+    }
+
+
+    .buy_modal .bottom
+    {
+        margin-top: 16px;
+    }
+
+
+    .buy_modal .price .label
+    {
+        margin-bottom: 6px;
+    }
+
+
+    .buy_modal .price .val
+    {
+        font-size: 32px;
+    }
+
+
+    .buy_modal .next_btn
+    {
+        font-size: 14px;
+        line-height: 130%;
+
+        width: auto;
+        padding: 22px 50px;
+    }
+
+
+    .buy_modal .next_btn[type=submit]
+    {
+        width: 100%;
+        margin-top: 14px;
+        padding: 22px;
+    }
+
+
+
+    /*---------------------------
+        PopUp - Success modal
+    ---------------------------*/
+    .modal.success
+    {
+        width: 355px;
+        padding: 72px 20px 28px;
+    }
+
+
+    .modal.success .icon
+    {
+        margin-bottom: 54px;
+    }
+
+
+    .modal.success .icon:before
+    {
+        width: 200px;
+        height: 200px;
+    }
+
+
+    .modal.success .icon svg
+    {
+        width: 97px;
+        height: 97px;
+    }
+
+
+    .modal.success .close_btn
+    {
+        font-size: 12px;
+        line-height: 130%;
+
+        width: 100%;
+        margin-top: 30px;
+        padding: 24px;
+    }
+}

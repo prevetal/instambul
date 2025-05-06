@@ -1,0 +1,34 @@
+@media print,
+(max-width: 1899px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    .wrap,
+    .fancybox__container
+    {
+        zoom: .80;
+    }
+
+    @-moz-document url-prefix()
+    {
+        html
+        {
+            width: calc(100% / .80);
+            height: calc(100% / .80);
+
+            transform: scale(.80);
+            transform-origin: left top;
+        }
+    }
+
+
+
+    /*----------------
+        Additional
+    ----------------*/
+    .additional .item1 .items
+    {
+        gap: 43px;
+    }
+}
