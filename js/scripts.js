@@ -106,6 +106,13 @@ document.addEventListener('DOMContentLoaded', function() {
 	}
 
 
+	const packagesFixPrices = {
+		3: 5190,
+		4: 6990,
+		6: 9990
+	}
+
+
 	// Modals
 	$('.modal_btn').click(function(e) {
 		e.preventDefault()
@@ -142,6 +149,9 @@ document.addEventListener('DOMContentLoaded', function() {
 					$('.buy_modal .items label input').prop('checked', false)
 					$('.buy_modal .items label input').attr({ disabled: false, checked: false })
 
+					// Disable next button
+					$('#buy_modal .next_btn').attr('disabled', true)
+
 					// One route modal
 					if (routeIndex !== null) {
 						let label = $('.buy_modal .items label').eq(routeIndex),
@@ -173,6 +183,9 @@ document.addEventListener('DOMContentLoaded', function() {
 						selectedRoutes.forEach(el => totalPrice += el.price)
 
 						$('.buy_modal .price .val span').text(totalPrice)
+
+						// Enable next button
+						$('.buy_modal .next_btn').attr('disabled', false)
 					}
 
 
@@ -214,9 +227,16 @@ document.addEventListener('DOMContentLoaded', function() {
 								})
 
 								// Set total price
-								selectedRoutes.forEach(el => totalPrice += el.price)
+								selectedRoutes.length in packagesFixPrices
+									? totalPrice = packagesFixPrices[selectedRoutes.length]
+									: selectedRoutes.forEach(el => totalPrice += el.price)
 
 								$('.buy_modal .price .val span').text(totalPrice)
+
+								// Enable next button
+								selectedRoutes.length == limit
+									? $('#buy_modal .next_btn').attr('disabled', false)
+									: $('#buy_modal .next_btn').attr('disabled', true)
 							}
 						})
 					}

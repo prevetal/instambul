@@ -96,7 +96,7 @@
 								<div class="step step1">
 									<div class="number">Шаг 1</div>
 
-									<div class="name">Изучаешь, <button class="btn scroll_btn" data-anchor="">как это работает</button></div>
+									<div class="name">Изучаешь, <a href="https://zagorie.ru/upload/iblock/4ea/4eae10bf98dde4f7356ebef161d365d5.pdf" target="_blank" class="btn">как это работает</a></div>
 
 									<picture class="image">
 										<img src="images/step1_image.png" alt="" loading="lazy">
@@ -131,7 +131,7 @@
 									<div class="name">Гуляешь, кайфуешь,<br> ешь вкусное, экономишь</div>
 
 									<div class="btns">
-										<button class="btn modal_btn" data-modal="feedback_modal">Хочу карты локаций</button>
+										<button class="btn scroll_btn" data-anchor="secret_map">Хочу карты локаций</button>
 
 										<button class="btn scroll_btn" data-anchor="buy_block">Хочу маршруты</button>
 									</div>
@@ -142,7 +142,7 @@
 				</section>
 
 
-				<section class="secret_map block">
+				<section class="secret_map block" id="secret_map">
 					<div class="data">
 						<div class="cont row">
 							<div class="info">
@@ -201,7 +201,7 @@
 											<div class="val">5100 ₽</div>
 										</div>
 
-										<button class="btn modal_btn" data-modal="feedback_modal">Купить карту</button>
+										<button class="btn modal_btn" data-modal="buy_carts_modal">Купить карту</button>
 									</div>
 								</div>
 							</div>
@@ -604,7 +604,7 @@
 								</div>
 
 								<div>
-									<button class="buy_btn">
+									<button class="buy_btn modal_btn" data-modal="buy_mini_quide_modal">
 										Забрать за 99 ₽ <small>вместо 390 ₽</small>
 									</button>
 								</div>
@@ -900,7 +900,7 @@
 						<div class="btns">
 							<button class="btn scroll_btn" data-anchor="buy_block">Выбери маршрут</button>
 
-							<button class="btn white modal_btn" data-modal="feedback_modal">Купить карту</button>
+							<button class="btn white modal_btn" data-modal="buy_carts_modal">Купить карту</button>
 						</div>
 
 						<div class="row">
@@ -957,22 +957,49 @@
 
 
 		<section class="modal" id="feedback_modal">
+			<div class="modal_title">Связаться с нами</div>
+
+			<form action="" class="form">
+				<div class="line">
+					<div class="field">
+						<input type="text" name="" value="" class="input" placeholder="Ваше имя">
+					</div>
+				</div>
+
+				<div class="line">
+					<div class="field">
+						<input type="text" name="" value="" class="input" placeholder="Никнейм в телеграме">
+					</div>
+				</div>
+
+				<div class="line">
+					<div class="field">
+						<input type="text" name="" value="" class="input" placeholder="Ваш комментарий">
+					</div>
+				</div>
+
+				<div class="submit">
+					<button type="submit" class="submit_btn">Отправить</button>
+				</div>
+			</form>
+		</section>
+
+
+		<section class="modal" id="buy_carts_modal">
 			<div class="modal_title">Покупка карт секретных мест</div>
 
 			<div class="modal_desc">Текст закладываю на всякий, мало ли надо будет что-то писать.</div>
 
 			<form action="" class="form">
-				<div class="columns">
-					<div class="line">
-						<div class="field">
-							<input type="text" name="" value="" class="input" placeholder="Ваше имя">
-						</div>
+				<div class="line">
+					<div class="field">
+						<input type="text" name="" value="" class="input" placeholder="Ваше имя">
 					</div>
+				</div>
 
-					<div class="line">
-						<div class="field">
-							<input type="text" name="" value="" class="input" placeholder="Никнейм в телеграме">
-						</div>
+				<div class="line">
+					<div class="field">
+						<input type="text" name="" value="" class="input" placeholder="Никнейм в телеграме">
 					</div>
 				</div>
 
@@ -982,9 +1009,34 @@
 					</div>
 				</div>
 
+				<div class="submit">
+					<button type="submit" class="submit_btn">Перейти к полате</button>
+				</div>
+			</form>
+		</section>
+
+
+		<section class="modal" id="buy_mini_quide_modal">
+			<div class="modal_title">Мини-гайд</div>
+
+			<div class="modal_desc">«5 идеальных завтраков в Стамбуле»</div>
+
+			<form action="" class="form">
 				<div class="line">
 					<div class="field">
-						<input type="text" name="" value="" class="input" placeholder="Ваш комментарий">
+						<input type="text" name="" value="" class="input" placeholder="Ваше имя">
+					</div>
+				</div>
+
+				<div class="line">
+					<div class="field">
+						<input type="text" name="" value="" class="input" placeholder="Никнейм в телеграме">
+					</div>
+				</div>
+
+				<div class="line">
+					<div class="field">
+						<input type="email" name="" value="" class="input" placeholder="E-mail (для получения файла)">
 					</div>
 				</div>
 
@@ -1081,7 +1133,7 @@
 					<div class="val"><span>0</span> ₽</div>
 				</div>
 
-				<button class="next_btn modal_btn" data-modal="buy_modal2">Далее</button>
+				<button class="next_btn modal_btn" disabled data-modal="buy_modal2">Далее</button>
 			</div>
 		</section>
 

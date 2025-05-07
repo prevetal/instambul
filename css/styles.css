@@ -930,10 +930,8 @@ header .feedback_btn
 }
 
 
-.steps .step .name .btn
+.steps .step .name a
 {
-    text-decoration: underline;
-
     color: #ff5a3d;
 }
 
@@ -1996,6 +1994,8 @@ header .feedback_btn
     height: 28px;
     margin-left: auto;
     padding: 4px 12px;
+
+    pointer-events: auto;
 
     color: #fff;
     border-radius: 40px;
@@ -3471,9 +3471,20 @@ footer .bg img
     max-width: 100%;
     padding: 30px 40px;
 
+    transition: .2s linear;
+
     color: #fff;
     border-radius: 70px;
     background: #ff5a3d;
+}
+
+
+.buy_modal .next_btn:disabled
+{
+    pointer-events: none;
+
+    color: var(--text_color);
+    background: #ededed;
 }
 
 
